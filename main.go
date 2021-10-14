@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import "github.com/01-edu/z01"
 
 func main() {
-	fmt.Println("abcdefghijklmnopqrstuvwxyz n/")
+	//var aRune string = ""
+	for compteur := 97; compteur < 123; compteur++ {
+		z01.PrintRune(rune(compteur))
+	}
+	z01.PrintRune(rune('\n'))
 }
