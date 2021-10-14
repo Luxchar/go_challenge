@@ -9,7 +9,6 @@ func IsNegative(nb int) {
 		z01.PrintRune(rune(70))
 	} else {
 		z01.PrintRune(rune(84))
-
 	}
 	z01.PrintRune(rune('\n'))
 }
