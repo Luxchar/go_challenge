@@ -1,4 +1,4 @@
-package piscine
+package main
 
 import "github.com/01-edu/z01"
 
@@ -25,7 +25,14 @@ func PrintComb2() {
 		if a == 10 {
 			a = 0
 		}
-
+		if a == 0 && b == 0 && c == 0 && d == 2 { //espace
+			z01.PrintRune(rune(48 + a))
+			z01.PrintRune(rune(48 + b))
+			z01.PrintRune(rune(32))
+			z01.PrintRune(rune(48 + c))
+			z01.PrintRune(rune(48 + d))
+			z01.PrintRune(44)
+		}
 		if d > b && a <= c {
 			z01.PrintRune(rune(32))
 			z01.PrintRune(rune(48 + a))
@@ -38,8 +45,6 @@ func PrintComb2() {
 	}
 }
 
-/*
 func main() {
 	PrintComb2()
 }
-*/
