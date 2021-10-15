@@ -1,14 +1,12 @@
 package piscine
 
+import "fmt"
+
 func PointOne(n *int) {
-
-	// normal variable declaration
-	var a = 1
-
-	// Initialization of pointer s with
-	// memory address of variable a
-	var s *int = &a
-
+	var a int
+	a = 1
+	p := &a
+	fmt.Println(*p)
 }
 
 /*
