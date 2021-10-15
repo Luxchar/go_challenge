@@ -1,10 +1,7 @@
 package piscine
 
 func PointOne(n *int) {
-	var a int
-	a = 1
-	p := &a
-	print(*p)
+	*n = 1
 }
 
 /*
