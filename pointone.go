@@ -1,12 +1,10 @@
 package piscine
 
-import "fmt"
-
 func PointOne(n *int) {
 	var a int
 	a = 1
 	p := &a
-	fmt.Println(*p)
+	println(*p)
 }
 
 /*
