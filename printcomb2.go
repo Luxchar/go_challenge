@@ -25,7 +25,7 @@ func PrintComb2() {
 		if a == 10 {
 			a = 0
 		}
-		if d > b && a <= c {
+		if a*10+b < c*10+d {
 			z01.PrintRune(rune(48 + a))
 			z01.PrintRune(rune(48 + b))
 			z01.PrintRune(rune(32))
