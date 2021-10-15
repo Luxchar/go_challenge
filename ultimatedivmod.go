@@ -1,15 +1,14 @@
-package main
-
-import "fmt"
+package piscine
 
 func UltimateDivMod(a *int, b *int) {
 	var i, j int
-	**i = &a
-	**j = &b
+	i = **&a
+	j = **&b
 	*a = i / j
 	*b = i % j
 }
 
+/*
 func main() {
 	a := 13
 	b := 2
@@ -17,3 +16,4 @@ func main() {
 	fmt.Println(a)
 	fmt.Println(b)
 }
+*/
