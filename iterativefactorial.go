@@ -1,6 +1,6 @@
 package piscine
 
-func RecursiveFactorial(nb int) int {
+func IterativeFactorial(nb int) int {
 	var factorielle int = 1
 	if nb == 1 || nb == 0 || nb < 0 {
 		return 0
