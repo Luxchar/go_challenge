@@ -2,7 +2,7 @@ package piscine
 
 func IterativeFactorial(nb int) int {
 	var factorielle int = 1
-	if nb <= 0 {
+	if nb <= 1 {
 		return 0
 	}
 	if nb > 1 && nb < 99 {
