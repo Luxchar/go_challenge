@@ -4,11 +4,9 @@ func Sqrt(nb int) int {
 	if nb == 1 {
 		return 1
 	}
-	for i := 2; i < 10; i++ {
-		for j := 2; j < 10; j++ {
-			if i*j == nb {
-				return j
-			}
+	for i := 0; i < 10; i++ {
+		if i*i == nb {
+			return i
 		}
 	}
 	return 0
