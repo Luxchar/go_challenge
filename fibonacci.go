@@ -1,19 +1,21 @@
-package piscine
+package main
+
+import "fmt"
 
 func Fibonacci(index int) int {
-	var a int = 0
 	if index < 0 {
 		return -1
 	}
-	for i := -2; i < index; i++ {
-		a = a + i
+	if index == 0 {
+		return 0
 	}
-	return a
+	if index == 1 {
+		return 1
+	}
+	return Fibonacci(index-1) + Fibonacci(index-2)
 }
 
-/*
 func main() {
 	arg1 := 4
 	fmt.Println(Fibonacci(arg1))
 }
-*/
