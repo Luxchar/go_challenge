@@ -2,9 +2,6 @@ package piscine
 
 func IterativeFactorial(nb int) int {
 	var factorielle int = 1
-	if nb == 1 {
-		return nb
-	}
 	if nb <= 0 {
 		return 0
 	}
@@ -18,7 +15,7 @@ func IterativeFactorial(nb int) int {
 
 /*
 func main() {
-	arg := 4
+	arg := 1
 	fmt.Println(IterativeFactorial(arg))
 }
 */
