@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func StrRev(s string) string {
 	runes := []rune(s)
@@ -10,8 +8,10 @@ func StrRev(s string) string {
 	return string(runes)
 }
 
+/*
 func main() {
 	s := "Hello World!"
 	s = StrRev(s)
 	fmt.Println(s)
 }
+*/
