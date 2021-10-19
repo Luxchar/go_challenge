@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package piscine
 
 func Compare(a, b string) int {
 	if a == b {
@@ -14,8 +10,10 @@ func Compare(a, b string) int {
 	return 1
 }
 
+/*
 func main() {
 	fmt.Println(Compare("Hello!", "Hello!"))
 	fmt.Println(Compare("Salut!", "lut!"))
 	fmt.Println(Compare("Ola!", "Ol"))
 }
+*/
