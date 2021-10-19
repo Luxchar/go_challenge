@@ -3,7 +3,7 @@ package piscine
 func AlphaCount(s string) int {
 	count := 0
 	for _, r := range s {
-		for compteur := 97; compteur < 123; compteur++ {
+		for compteur := 97; compteur < 122; compteur++ {
 			if string(r) == string(compteur) {
 				count++
 			}
