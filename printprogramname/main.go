@@ -2,6 +2,7 @@ package main
 
 import (
 	"os"
+	"path/filepath"
 
 	"github.com/01-edu/z01"
 )
@@ -13,6 +14,9 @@ func osname(s string) {
 	z01.PrintRune(rune('\n'))
 }
 func main() {
-	osname(os.Args[0])
+	s := ""
+	path := os.Args[0]
+	s = filepath.Base(path)
+	osname(s)
 
 }
