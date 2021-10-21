@@ -13,7 +13,5 @@ func main() {
 	for _, r := range path {
 		z01.PrintRune(r)
 	}
-
 	z01.PrintRune(rune('\n'))
-
 }
