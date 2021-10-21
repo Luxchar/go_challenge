@@ -7,15 +7,13 @@ import (
 	"github.com/01-edu/z01"
 )
 
-func osname(s string) {
-	for _, r := range s {
+func main() {
+	path := os.Args[0]
+	path = filepath.Base(path)
+	for _, r := range path {
 		z01.PrintRune(r)
 	}
+
 	z01.PrintRune(rune('\n'))
-}
-func main() {
-	s := ""
-	path := os.Args[0]
-	s = filepath.Base(path)
-	osname(s)
+
 }
