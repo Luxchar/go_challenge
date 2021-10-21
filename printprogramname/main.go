@@ -1,11 +1,18 @@
 package main
 
 import (
-	"fmt"
 	"os"
+
+	"github.com/01-edu/z01"
 )
 
+func osname(s string) {
+	for _, r := range s {
+		z01.PrintRune(r)
+	}
+	z01.PrintRune(rune('\n'))
+}
 func main() {
-	fmt.Fprintf(os.Stderr, "%s \n", os.Args[0])
+	osname(os.Args[3])
 
 }
