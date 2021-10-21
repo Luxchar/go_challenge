@@ -18,5 +18,4 @@ func main() {
 	path := os.Args[0]
 	s = filepath.Base(path)
 	osname(s)
-
 }
