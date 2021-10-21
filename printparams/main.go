@@ -8,8 +8,9 @@ import (
 
 func main() {
 	s := ""
-	for _, arg := range os.Args[1:] {
-		s += " " + arg
+	a := os.Args[1:]
+	for _, arg := range a {
+		s += arg //espace
 		for _, r := range s {
 			z01.PrintRune(r)
 		}
