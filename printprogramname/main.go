@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Fprintf(os.Stderr, "your own program name is %s \n", os.Args[0])
+	fmt.Fprintf(os.Stderr, "%s \n", os.Args[0])
 
 }
