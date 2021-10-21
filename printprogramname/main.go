@@ -7,9 +7,9 @@ import (
 )
 
 func main() {
-	s := os.Args[0]
+	s := []rune(os.Args[0])[2:]
 	for _, r := range s {
 		z01.PrintRune(r)
 	}
-	z01.PrintRune(rune('\n'))
+	z01.PrintRune('\n')
 }
