@@ -10,7 +10,7 @@ func main() {
 	s := ""
 	a := os.Args[1:]
 	for _, arg := range a {
-		s += arg //espace
+		s += arg
 		for _, r := range s {
 			z01.PrintRune(r)
 		}
