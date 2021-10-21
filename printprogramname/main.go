@@ -13,6 +13,6 @@ func osname(s string) {
 	z01.PrintRune(rune('\n'))
 }
 func main() {
-	osname(os.Args[3])
+	osname(os.Args[0])
 
 }
