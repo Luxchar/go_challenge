@@ -10,3 +10,10 @@ func AppendRange(min, max int) []int {
 	}
 	return s
 }
+
+/*
+func main() {
+	fmt.Println(AppendRange(5, 10))
+	fmt.Println(AppendRange(10, 5))
+}
+*/
