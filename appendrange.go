@@ -1,14 +1,14 @@
 package piscine
 
 func AppendRange(min, max int) []int {
-	var a = []int{}
+	var s = []int{}
 	if min >= max {
-		return a
+		return s
 	}
 	for i := min; i < max; i++ {
-		a = append(a, i)
+		s = append(s, i)
 	}
-	return a
+	return s
 }
 
 /*
