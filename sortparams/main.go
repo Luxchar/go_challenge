@@ -18,8 +18,8 @@ func main() {
 	for i := 1; i < len(arg); i++ {
 		for _, k := range arg[i] {
 			z01.PrintRune(k)
-			z01.PrintRune('\n')
 		}
+		z01.PrintRune('\n')
 	}
 }
 
