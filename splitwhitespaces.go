@@ -9,7 +9,7 @@ func SplitWhiteSpaces(s string) []string {
 			mot += string(i)
 			a = append(a, mot)
 		}
-		if string(i) == " " || string(i) == "  " {
+		if string(i) == " " || string(i) == "  " || string(i) == "   " {
 			a = append(a, mot)
 			mot = ""
 		} else {
