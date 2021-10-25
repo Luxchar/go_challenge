@@ -5,7 +5,7 @@ func SplitWhiteSpaces(s string) []string {
 	mot := ""
 	index := 1
 	for _, i := range s {
-		if len(s) == index {
+		if len(s) == index-1 {
 			mot += string(i)
 			a = append(a, mot)
 		}
@@ -14,6 +14,7 @@ func SplitWhiteSpaces(s string) []string {
 				a = append(a, mot)
 				mot = ""
 			}
+			mot = ""
 		} else {
 			mot += string(i)
 		}
