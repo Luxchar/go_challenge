@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func SplitWhiteSpaces(s string) []string {
 	a := []string{}
@@ -24,7 +22,9 @@ func SplitWhiteSpaces(s string) []string {
 	return a
 }
 
+/*
 func main() {
 	fmt.Printf("%#v\n", SplitWhiteSpaces("Fy0wbItLc2~Hp =YO|s-D@*mBy+ T,,0]dR~-2X%i 5~=`~,GZEh&r. c)]S79[5Rw/SZ 0hu\\wZBczhlY\" ~>:egD<|'mb\\3 <B^@G6{6|vWX "))
 	fmt.Printf("%#v\n", SplitWhiteSpaces("Hello how are you?"))
 }
+*/
