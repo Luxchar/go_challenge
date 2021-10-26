@@ -1,16 +1,12 @@
 package piscine
 
-import (
-	"github.com/01-edu/z01"
-)
-
 func ToUpper(s string) string {
 	a := ""
 	for _, i := range s {
 		if IsLower(string(i)) {
-			z01.PrintRune(rune(int(i) - 32))
+			a += string(int(i) - 32)
 		} else {
-			z01.PrintRune(rune(int(i)))
+			a += string(int(i))
 		}
 	}
 	return a
