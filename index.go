@@ -5,7 +5,6 @@ func Index(s string, toFind string) int {
 	match := 0
 	index := 0
 	for _, i := range s {
-		print(string(toFind[index]), "=", string(i))
 		if len(toFind) > 1 {
 			if match == len(toFind)-1 {
 				count++
