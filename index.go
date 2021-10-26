@@ -25,11 +25,12 @@ func Index(s string, toFind string) int {
 				match++
 				index++
 			}
-			count++
 		}
 		if string(i) == toFind {
-			place++
+			place = count
+			break
 		}
+		count++
 	}
 	if place == 666 {
 		return 0
