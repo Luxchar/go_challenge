@@ -1,4 +1,4 @@
-package main
+package piscine
 
 func PrintNbrInOrder(n int) {
 	a := n
