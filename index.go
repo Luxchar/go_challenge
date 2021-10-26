@@ -4,6 +4,7 @@ func Index(s string, toFind string) int {
 	place := 0
 	match := 0
 	index := 0
+	count := 0
 	for _, i := range s {
 		if len(toFind) > 1 {
 			if match == len(toFind)-1 {
@@ -14,12 +15,13 @@ func Index(s string, toFind string) int {
 				index = 0
 			}
 			if string(i) == string(toFind[index]) {
-				if index == 0 {
-					place = index
+				if match == 0 {
+					place = count
 				}
 				match++
 				index++
 			}
+			count++
 		}
 		if string(i) == toFind {
 			place++
