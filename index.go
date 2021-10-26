@@ -1,31 +1,32 @@
 package piscine
 
 func Index(s string, toFind string) int {
-	count := 0
+	place := 0
 	match := 0
 	index := 0
 	for _, i := range s {
 		if len(toFind) > 1 {
 			if match == len(toFind)-1 {
-				count++
-				match = 0
-				index = 0
+				break
 			}
 			if string(i) != string(toFind[index]) {
 				match = 0
 				index = 0
 			}
 			if string(i) == string(toFind[index]) {
+				if index == 0 {
+					place = index
+				}
 				match++
 				index++
 			}
 		}
 		if string(i) == toFind {
-			count++
+			place++
 		}
 	}
-	if count == 0 {
+	if place == 0 {
 		return -1
 	}
-	return count
+	return place
 }
