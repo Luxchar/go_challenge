@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package piscine
 
 func IsAlpha(s string) bool {
 	for _, i := range s {
@@ -11,12 +7,4 @@ func IsAlpha(s string) bool {
 		}
 	}
 	return true
-}
-
-func main() {
-	fmt.Println(IsAlpha("Hello! How are you?"))
-	fmt.Println(IsAlpha("HelloHowareyou"))
-	fmt.Println(IsAlpha("What's this 4?"))
-	fmt.Println(IsAlpha("Whatsthis4"))
-
 }
