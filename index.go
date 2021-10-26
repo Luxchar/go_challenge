@@ -12,6 +12,9 @@ func Index(s string, toFind string) int {
 		}
 		if len(toFind) > 1 {
 			if match == len(toFind)-1 {
+				if place == 0 {
+					place = 666
+				}
 				break
 			}
 			if string(i) != string(toFind[index]) {
@@ -32,13 +35,10 @@ func Index(s string, toFind string) int {
 		}
 		count++
 	}
-	if match != len(toFind)-1 {
-		place = 0
-	}
 	if place == 666 {
 		return 0
 	}
-	if place == 0 {
+	if place == 0 || match != len(toFind)-1 {
 		return -1
 	}
 	return place
