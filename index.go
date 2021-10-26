@@ -32,6 +32,9 @@ func Index(s string, toFind string) int {
 		}
 		count++
 	}
+	if match != len(toFind)-1 {
+		place = 0
+	}
 	if place == 666 {
 		return 0
 	}
