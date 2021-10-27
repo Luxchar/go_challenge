@@ -8,9 +8,9 @@ func PrintNbrInOrder(n int) {
 		z01.PrintRune(rune('0'))
 	} else {
 		for i := 0; i < n; i++ {
-			valeur := n % 10
+			val := n % 10
 			n /= 10
-			order = append(order, valeur)
+			order = append(order, val)
 		}
 		for i := 0; i < len(order); i++ {
 			for j := 0; j < len(order); j++ {
