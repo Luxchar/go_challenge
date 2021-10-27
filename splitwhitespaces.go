@@ -10,11 +10,11 @@ func SplitWhiteSpaces(s string) []string {
 			a = append(a, mot)
 		}
 		if string(i) == " " {
-			if string(mot[len(mot)-1]) != "" && string(mot[len(mot)-1]) != " " {
+			if mot != "" {
 				a = append(a, mot)
 				mot = ""
 			}
-		} else {
+		} else if mot != " " {
 			mot += string(i)
 		}
 		index++
