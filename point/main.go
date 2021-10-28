@@ -47,6 +47,7 @@ func main() {
 	z01.PrintRune(rune('='))
 	z01.PrintRune(rune(' '))
 	PrintNbr(points.x)
+	z01.PrintRune(rune(','))
 	z01.PrintRune(rune(' '))
 	z01.PrintRune(rune('y'))
 	z01.PrintRune(rune(' '))
