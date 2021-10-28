@@ -22,6 +22,6 @@ func main() {
 		myString := string(b)
 		fmt.Print(myString)
 	} else {
-		fmt.Print("File name missing")
+		fmt.Print("Fil name missing")
 	}
 }
