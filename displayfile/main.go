@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main() {
+func displayfilename(args string) string {
 	fichier := os.Args[1]
 	file, err := os.Open(fichier)
 	defer func() {
@@ -17,5 +17,13 @@ func main() {
 
 	b, err := ioutil.ReadAll(file)
 	myString := string(b)
-	fmt.Print(myString)
+	return myString
+}
+
+func main() {
+	if len(os.Args[1:]) >= 1 {
+		fmt.Print(displayfilename(os.Args[1]))
+	} else {
+		fmt.Print("no")
+	}
 }
