@@ -4,7 +4,7 @@ func TrimAtoi(s string) int {
 	val := 0
 	minus := 0
 	for _, i := range s {
-		if i == '-' {
+		if i == '-' && val == 0 {
 			minus = 1
 		}
 		if int(i) >= 48 && int(i) <= 57 {
