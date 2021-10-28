@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"os"
 
@@ -9,6 +10,7 @@ import (
 
 func main() {
 	var fichier string
+	fmt.Scanln(&fichier)
 	file, err := os.Open(fichier)
 	defer func() {
 		if err = file.Close(); err != nil {
