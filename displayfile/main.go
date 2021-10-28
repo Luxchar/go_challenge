@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-	a := 0
 	if len(os.Args[1:]) > 1 {
 		fmt.Print("Too many arguments")
 	} else if len(os.Args[1:]) >= 1 {
@@ -15,7 +14,7 @@ func main() {
 		file, err := os.Open(fichier)
 		defer func() {
 			if err = file.Close(); err != nil {
-				a++
+				print("")
 			}
 		}()
 
