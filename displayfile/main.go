@@ -24,6 +24,6 @@ func main() {
 	if len(os.Args[1:]) >= 1 {
 		fmt.Print(displayfilename(os.Args[1]))
 	} else {
-		fmt.Print("no")
+		fmt.Print("File name missing")
 	}
 }
