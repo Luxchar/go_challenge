@@ -8,7 +8,8 @@ import (
 )
 
 func main() {
-	file, err := os.Open("quest8.txt")
+	var fichier string
+	file, err := os.Open(fichier)
 	defer func() {
 		if err = file.Close(); err != nil {
 			print("")
