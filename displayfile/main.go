@@ -21,7 +21,9 @@ func displayfilename(args string) string {
 }
 
 func main() {
-	if len(os.Args[1:]) >= 1 {
+	if len(os.Args[1:]) > 1 {
+		fmt.Print("Too many arguments")
+	} else if len(os.Args[1:]) >= 1 {
 		fmt.Print(displayfilename(os.Args[1]))
 	} else {
 		fmt.Print("File name missing")
