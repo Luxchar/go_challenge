@@ -13,10 +13,6 @@ func PrintNbrInOrder(n int) {
 			n /= 10
 		}
 		for i := 0; i < len(order); i++ {
-			z01.PrintRune(rune(48 + order[i]))
-		}
-		println("")
-		for i := 0; i < len(order); i++ {
 			for j := 0; j < len(order); j++ {
 				if order[i] < order[j] {
 					order[i], order[j] = order[j], order[i]
