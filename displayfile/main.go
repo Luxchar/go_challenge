@@ -7,8 +7,7 @@ import (
 )
 
 func main() {
-	var fichier string
-	fmt.Scanln(&fichier)
+	fichier := os.Args[1]
 	file, err := os.Open(fichier)
 	defer func() {
 		if err = file.Close(); err != nil {
