@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-
-	"github.com/01-edu/z01"
 )
 
 func main() {
@@ -19,7 +17,6 @@ func main() {
 	}()
 
 	b, err := ioutil.ReadAll(file)
-	for _, r := range b {
-		z01.PrintRune(rune(r))
-	}
+	myString := string(b)
+	fmt.Print(myString)
 }
