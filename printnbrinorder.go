@@ -7,11 +7,15 @@ func PrintNbrInOrder(n int) {
 	if n == 0 {
 		z01.PrintRune(rune('0'))
 	} else {
-		for i := 0; i < n; i++ {
+		for n > 0 {
 			val := n % 10
-			n /= 10
 			order = append(order, val)
+			n /= 10
 		}
+		for i := 0; i < len(order); i++ {
+			z01.PrintRune(rune(48 + order[i]))
+		}
+		println("")
 		for i := 0; i < len(order); i++ {
 			for j := 0; j < len(order); j++ {
 				if order[i] < order[j] {
