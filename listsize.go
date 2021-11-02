@@ -1,14 +1,11 @@
 package piscine
 
-func ListPushFront(l *List, data interface{}) {
-	node := &NodeL{Data: data, Next: l.Head}
-	l.Head = node
-	if l.Tail == nil {
-		l.Tail = l.Head
-	}
-	l.length++
-}
-
 func ListSize(l *List) int {
-	return l.length
+	current := l.Head
+	cpt := 0
+	for current != nil {
+		cpt++
+		current = current.Next
+	}
+	return cpt
 }
