@@ -6,7 +6,7 @@ func IsSorted(f func(a, b int) int, a []int) bool {
 		croissant = false
 	}
 	for i, v := range a {
-		for j := i + 1; j < len(a); j++ {
+		for j := i; j < len(a); j++ {
 			if croissant {
 				if f(v, a[j]) > 0 {
 					return false
