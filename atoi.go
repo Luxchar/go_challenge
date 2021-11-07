@@ -5,7 +5,7 @@ func Atoi(s string) int {
 	minus := 0
 	plus := 0
 	for _, i := range s {
-		if (i < '0' || i > '9') && (i != '-' && i != '+') || minus == 2 || plus == 2 {
+		if (i < '0' || i > '9') && (i != '-' && i != '+') || (minus == 2 || plus == 2) || (minus == 1 && plus == 1) {
 			return 0
 		}
 		if i == '-' {
