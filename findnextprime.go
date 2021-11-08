@@ -6,7 +6,7 @@ func FindNextPrime(nb int) int {
 	}
 	for i := nb; i > nb/2; i++ {
 		if IsPrime(i) {
-			return i
+			return i + 1
 		}
 	}
 	return 1
