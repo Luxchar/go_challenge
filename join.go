@@ -1,9 +1,9 @@
 package piscine
 
-func Join(elems []string) string {
+func Join(strs []string, sep string) string {
 	a := ""
-	for _, i := range elems {
-		a += i
+	for _, v := range strs {
+		a += v
 		a += ":"
 	}
 	return a
