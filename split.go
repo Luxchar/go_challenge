@@ -14,12 +14,15 @@ func Split(s, sep string) []string {
 			mot = ""
 			length = 0
 		}
-		if string(v) == string(sep[length]) && string(s[i+1]) == string(sep[length]+1) {
+		if string(v) == string(sep[length]) {
 			length++
 			mot += string(v)
 		} else {
 			mot += string(v)
 			length = 0
+			if string(v) == string(sep[length]) {
+				length++
+			}
 		}
 	}
 	return a
