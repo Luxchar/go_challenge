@@ -14,7 +14,7 @@ func Split(s, sep string) []string {
 			mot = ""
 			length = 0
 		}
-		if string(v) == string(sep[length]) {
+		if string(v) == string(sep[length]) && mot[i-1] == string(sep[length]-1){
 			length++
 			mot += string(v)
 		} else {
@@ -24,3 +24,7 @@ func Split(s, sep string) []string {
 	}
 	return a
 }
+
+Split("cnJDeQ2OLK7YPKIWqkpYRvVEtH5RWKIW0XA0BzncRNZpKKIWQQbk4iU2gMM9OKIWpihbMQy8LnB5hKIW3ecV8FmOvsgMBKIWF90cIVey4JMcpKIWeJiL8WVtTEWG0", "KIW") == 
+[]string{"cnJDeQ2OLK7YP", "qkpYRvVEtH5RW", "0XA0BzncRNZpKKIWQQbk4iU2gMM9O", "pihbMQy8LnB5h", "3ecV8FmOvsgMB", "F90cIVey4JMcp", "eJiL8WVtTEWG0"} instead of []
+string{"cnJDeQ2OLK7YP", "qkpYRvVEtH5RW", "0XA0BzncRNZpK", "QQbk4iU2gMM9O", "pihbMQy8LnB5h", "3ecV8FmOvsgMB", "F90cIVey4JMcp", "eJiL8WVtTEWG0"}
