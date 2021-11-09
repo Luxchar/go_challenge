@@ -19,12 +19,7 @@ func Split(s, sep string) []string {
 			mot += string(v)
 		} else {
 			mot += string(v)
-			lengt
-
-			func main() {
-				s := "HelloHAhowHAareHAyou?"
-				fmt.Printf("%#v\n", Split(s, "HA"))
-			}h = 0
+			length = 0
 		}
 	}
 	return a
