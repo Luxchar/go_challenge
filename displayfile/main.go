@@ -10,7 +10,7 @@ func main() {
 	if len(os.Args[1:]) > 1 {
 		fmt.Print("Too many arguments")
 	} else if len(os.Args[1:]) == 0 {
-		fmt.Print("File name missing")
+		fmt.Println("File name missing")
 	} else {
 		file, _ := os.Open(os.Args[1])
 		b, _ := ioutil.ReadAll(file)
