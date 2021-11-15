@@ -53,11 +53,11 @@ func doop(args []string) int {
 	b := Atoi(args[2])
 	if args[1] == "*" {
 		return a * b
-	} else if args[1] == "/" && a == 0 || b == 0 {
+	} else if args[1] == "/" && b == 0 {
 		return 888888
 	} else if args[1] == "/" {
 		return a / b
-	} else if args[1] == "%" && a == 0 || b == 0 {
+	} else if args[1] == "%" && b == 0 {
 		return 9999999
 	} else if args[1] == "%" {
 		return a % b
