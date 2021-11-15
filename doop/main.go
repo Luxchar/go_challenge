@@ -77,7 +77,8 @@ func main() {
 		os.Stderr.WriteString("No modulo by 0")
 	} else {
 		if doop(arg) < 900000 && doop(arg) > -9000000 && Atoi(arg[0]) < 900000 && Atoi(arg[2]) > -9000000 {
-			os.Stderr.WriteString(string(doop(arg)))
+			r := byte(doop(arg))
+			os.Stdout.WriteString(string(48 + r))
 		}
 	}
 }
