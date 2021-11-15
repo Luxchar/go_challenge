@@ -94,9 +94,9 @@ func PrintNbr(n int) {
 func main() {
 	arg := os.Args[1:]
 	if doop(arg) == 888888 {
-		print("No division by 0")
+		os.Stderr.WriteString("No division by 0")
 	} else if doop(arg) == 9999999 {
-		print("No modulo by 0")
+		os.Stderr.WriteString("No modulo by 0")
 	} else {
 		if doop(arg) < 900000 && doop(arg) > -9000000 && Atoi(arg[0]) < 900000 && Atoi(arg[2]) > -9000000 {
 			PrintNbr(doop(arg))
