@@ -71,12 +71,6 @@ func doop(args []string) int {
 	return 0
 }
 
-func PrintStr(s string) {
-	for _, r := range s {
-		z01.PrintRune(r)
-	}
-}
-
 func PrintNbr(n int) {
 	order := []int{}
 	if n < 0 {
@@ -100,9 +94,9 @@ func PrintNbr(n int) {
 func main() {
 	arg := os.Args[1:]
 	if doop(arg) == 888888 {
-		PrintStr("No division by 0")
+		print("No division by 0")
 	} else if doop(arg) == 9999999 {
-		PrintStr("No modulo by 0")
+		print("No modulo by 0")
 	} else {
 		if doop(arg) < 900000 && doop(arg) > -9000000 && Atoi(arg[0]) < 900000 && Atoi(arg[2]) > -9000000 {
 			PrintNbr(doop(arg))
