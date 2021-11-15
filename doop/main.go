@@ -1,8 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"os"
+
+	"github.com/01-edu/z01"
 )
 
 func Atoi(s string) int {
@@ -70,15 +71,41 @@ func doop(args []string) int {
 	return 0
 }
 
+func PrintStr(s string) {
+	for _, r := range s {
+		z01.PrintRune(r)
+	}
+}
+
+func PrintNbr(n int) {
+	order := []int{}
+	if n < 0 {
+		z01.PrintRune(rune('-'))
+		n = n * -1
+	}
+	if n == 0 {
+		z01.PrintRune('0')
+		return
+	}
+	for n != 0 {
+		val := n%10 + '0'
+		order = append(order, val)
+		n /= 10
+	}
+	for i := 0; i < len(order); i++ {
+		z01.PrintRune(rune(order[len(order)-i-1]))
+	}
+}
+
 func main() {
 	arg := os.Args[1:]
 	if doop(arg) == 888888 {
-		fmt.Println("No division by 0")
+		PrintStr("No division by 0")
 	} else if doop(arg) == 9999999 {
-		fmt.Println("No modulo by 0")
+		PrintStr("No modulo by 0")
 	} else {
 		if doop(arg) < 900000 && doop(arg) > -9000000 && Atoi(arg[0]) < 900000 && Atoi(arg[2]) > -9000000 {
-			fmt.Println(doop(arg))
+			PrintNbr(doop(arg))
 		}
 	}
 }
