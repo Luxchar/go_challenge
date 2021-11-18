@@ -60,13 +60,13 @@ func main() {
 		os.Stdout.WriteString(string("No division by 0$"))
 	} else if args[1] == "%" && b == 0 {
 		os.Stdout.WriteString(string("No modulo by 0$"))
-	} else if args[1] == "%" {
+	} else if args[1] == "%" || args[1] == string('%') {
 		v = a % b
-	} else if args[1] == "+" {
+	} else if args[1] == "+" || args[1] == string('+') {
 		v = a + b
-	} else if args[1] == "-" {
+	} else if args[1] == "-" || args[1] == string('-') {
 		v = a - b
-	} else if args[1] == "/" {
+	} else if args[1] == "/" || args[1] == string('/') {
 		v = a / b
 	}
 	arr := []int{}
