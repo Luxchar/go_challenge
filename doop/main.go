@@ -54,8 +54,8 @@ func main() {
 	a := Atoi(args[0])
 	b := Atoi(args[2])
 	v := 0
-	if args[1] == "*" {
-		os.Stdout.WriteString(string(a * b))
+	if args[1] == "*" || args[1] == string('*') {
+		v = a * b
 	} else if args[1] == "/" && b == 0 {
 		os.Stdout.WriteString(string("No division by 0$"))
 	} else if args[1] == "%" && b == 0 {
