@@ -8,13 +8,9 @@ func Atoi(s string) int {
 	num := 0
 	minus := 0
 	plus := 0
-	nb := 0
 	for _, i := range s {
-		if (i < '0' || i > '9') || (minus == 2 || plus == 2) || (minus == 1 && plus == 1) || (nb == 1 && i == '-' || i == '+') {
+		if i < '0' || i > '9' {
 			return 0
-		}
-		if i > '0' || i < '9' {
-			nb = 1
 		}
 		if i == '-' {
 			minus++
@@ -52,7 +48,9 @@ func main() {
 		os.Stdout.WriteString(string(0))
 	}
 	a := Atoi(args[0])
-	b := Atoi(args[2])
+	b := Atoi(args[2]) //PB NEGATIF ATOI
+	print(a)
+	print(b)
 	v := 0
 	if args[1] == "*" || args[1] == string('*') {
 		v = a * b
@@ -69,11 +67,11 @@ func main() {
 	} else if args[1] == "/" || args[1] == string('/') {
 		v = a / b
 	}
-	arr := []int{}
 	if v < 0 {
-		v = v * -1
+		v *= -1
 		minus = 1
 	}
+	arr := []int{}
 	if v > 0 {
 		for v > 0 {
 			val := v%10 + '0'
