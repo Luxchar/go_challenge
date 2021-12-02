@@ -1,10 +1,6 @@
-package main
+package piscine
 
-import (
-	"github.com/01-edu/z01"
-)
-
-https://runestone.academy/runestone/books/published/pythonds/Recursion/pythondsConvertinganIntegertoaStringinAnyBase.html
+import "github.com/01-edu/z01"
 
 func toStr(n int, base string) byte {
 	convertString := base
